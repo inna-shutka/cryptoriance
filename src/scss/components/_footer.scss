@@ -1,0 +1,44 @@
+@use '../components/utils' as u;
+@use '../config/variables' as v;
+
+.footer {
+    padding: 36px 16px 40px 16px;
+    @include u.flex(center, center, column);
+    @include u.media('tablet-wide') {
+        padding: 26px 64px;
+        @include u.flex(space-between, center);
+    }
+    &__logo {
+        @include u.flex(center, center);
+        width: 148px;
+        height: 20px;
+        margin-bottom: 32px;
+        @include u.media('tablet-wide') {
+            margin-bottom: 0px;
+        }
+    }
+    &__items {
+        @include u.flex(center, center, column);
+        @include u.media('tablet-wide') {
+            @include u.flex(space-between, center);
+            gap: 48px;
+        }
+    }
+    &__menu {
+        @include u.flex(center, center);
+        gap: 32px;
+        margin-bottom: 8px;
+        @include u.media('tablet-wide') {
+            @include u.flex(space-between, center);
+            margin-bottom: 0px;
+        }
+    }
+    &__link {
+        @include u.text(u.rem(16), 400, v.$color-gray, 18px, v.$primary-font);
+        text-align: center;
+    }
+    &__rights {
+        @include u.text(u.rem(16), 400, v.$color-dark-gray, 18px, v.$primary-font);
+        text-align: center;
+    }
+}

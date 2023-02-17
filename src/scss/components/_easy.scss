@@ -1,0 +1,52 @@
+@use '../components/utils' as u;
+@use '../config/variables' as v;
+
+.easy {
+    padding: 0px 16px 166px 16px;
+    @include u.flex(flex-start, flex-start, column);
+    @include u.media('tablet-wide') {
+        padding: 0px 64px 188px 64px;
+        @include u.flex(space-between, flex-start);
+    }
+    &__info {
+        @include u.flex(flex-start, flex-start, column);
+    }
+    &__title {
+        width: 343px;
+        margin-bottom: 24px;
+        @include u.media('tablet-wide') {
+            width: 498px;
+            margin-bottom: 32px;
+        }
+    }
+    &__subtitle {
+        width: 343px;
+        margin-bottom: 24px;
+        @include u.media('tablet-wide') {
+            width: 392px;
+            margin-bottom: 40px;
+        }
+    }
+    &__button {
+        margin-bottom: 56px;
+        @include u.media('tablet-wide') {
+            margin-bottom: 0px;
+        }
+    }
+    &__image {
+        width: 300px;
+        height: 230px;
+        @include u.media('tablet-wide') {
+            width: 556px;
+            height: 384px;
+        }
+    }
+    &__img {
+        width: 300px;
+        height: 230px;
+        @include u.media('tablet-wide') {
+            width: 556px;
+            height: 384px;
+        }
+    }
+}

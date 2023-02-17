@@ -1,30 +1,31 @@
-@use 'variables' as v;
+@use '../components/utils' as u;
+@use './variables' as v;
 
 *,
 *:after,
 *::before {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 html {
-  font-size: v.$base-font-size;
   background-color: v.$color-bg;
 }
 
-body {
+body, input, button, textarea, select {
   font-family: v.$primary-font;
 }
 
 .container {
   width: 100%;
-  max-width: calc(800px + v.$mobile-container-padding-x);
-  padding: {
-    left: v.$mobile-container-padding-x;
-    right: v.$mobile-container-padding-x;
-  }
+  max-width: 1366px;
+  padding: 0px;
   margin: {
     left: auto;
     right: auto;
+  }
+  @include u.media('desktop-wide') {
+    max-width: 100%;
   }
 }

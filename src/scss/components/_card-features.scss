@@ -1,0 +1,70 @@
+@use '../components/utils' as u;
+@use '../config/variables' as v;
+
+.card-features {
+    position: relative;
+    min-width: 287px;
+    min-height: 289px;
+    background: v.$color-medium-black;
+    border: 2px v.$color-medium-black;
+    border-radius: 10px;
+    @include u.flex(flex-start, center, column);
+    padding: 24px 10px;
+    @include u.media('tablet-wide') {
+        min-width: 440px;
+        min-height: 440px;
+        padding: 78px 24px;
+    }
+    &::after {
+        content:'';
+        position: absolute;
+        display: block;
+        width: 100%;
+        min-width: 287px;
+        min-height: 289px;
+        top: -25px;
+        left: 30px;
+        border: 2px solid transparent;
+        background: v.$gradient-padding padding-box,
+        v.$gradient-border border-box;
+        border-radius: 10px;
+        z-index: -1;
+        @include u.media('tablet-wide') {
+            min-width: 440px;
+            min-height: 440px;
+            top: -45px;
+            left: 45px;
+        }
+    }
+    &__icon {
+        width: 66px;
+        height: 66px;
+        margin-bottom: 24px;
+        @include u.media('tablet-wide') {
+        margin-bottom: 40px;
+        }
+    }
+    &__icon-img {
+        width: 66px;
+        height: 66px;
+    }
+    &__title {
+        @include u.text(u.rem(20), 500, v.$color-white, 24px, v.$primary-font);
+        margin-bottom: 16px;
+        text-align: center;
+        @include u.media('tablet-wide') {
+            @include u.text(u.rem(24), 500, v.$color-white, 28px, v.$primary-font);
+            margin-bottom: 30px;
+        }
+    }
+    &__subtitle {
+        @include u.text(u.rem(16), 400, v.$color-white-gray, 160%, v.$primary-font);
+        text-align: center;
+        width: 100%;
+        max-width: 267px;
+        @include u.media('tablet-wide') {
+            @include u.text(u.rem(18), 400, v.$color-white-gray, 160%, v.$primary-font);
+            max-width: 330px;
+        }
+    }
+}

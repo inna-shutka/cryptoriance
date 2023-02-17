@@ -1,0 +1,53 @@
+@use '../components/utils' as u;
+@use '../config/variables' as v;
+
+.features {
+    padding: 0px 16px 160px 16px;
+    margin-top: 0px;
+    @include u.media('phone-wide') {
+        margin-top: 550px;
+    }
+    @include u.media('tablet-small') {
+        margin-top: 560px;
+    }
+    @include u.media('tablet') {
+        margin-top: 580px;
+    }
+    @include u.media('tablet-medium') {
+        margin-top: 600px;
+    }
+    @include u.media('tablet-wide') {
+        padding: 0px 64px 174px 64px;
+        margin-top: 0px;
+    }
+    &__header {
+        @include u.flex(center, flex-start, column);
+        @include u.media('tablet-wide') {
+            @include u.flex(center, center, column);
+        }
+    }
+    &__subtitle {
+        margin-bottom: 24px;
+    }
+    &__title {
+        margin-bottom: 73px;
+        @include u.media('tablet-wide') {
+        margin-bottom: 144px;
+        }
+    }
+    &__cards {
+        padding-top: 25px;
+        @include u.flex(space-between, stretch);
+        gap: 100px;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        @include u.media('tablet-wide') {
+            padding-top: 45px;
+            gap: 125px;
+        }
+    }
+    &__card {
+        @include u.flex(flex-start, center, column);
+        scroll-snap-align: center;
+    }
+}

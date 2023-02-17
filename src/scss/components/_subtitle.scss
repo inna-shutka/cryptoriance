@@ -1,0 +1,48 @@
+@use '../components/utils' as u;
+@use '../config/variables' as v;
+
+.subtitle {
+    @include u.text(u.rem(16), 400, v.$color-gray, 160%, v.$primary-font);
+    @include u.media('tablet-wide') {
+        @include u.text(u.rem(18), 400, v.$color-gray, 160%, v.$primary-font);
+    }
+    &--features {
+        @include u.text(u.rem(16), 500, v.$color-blue-subtitle, 140%, v.$primary-font);
+    }
+    &--easy {
+        @include u.text(u.rem(16), 400, v.$color-white-gray, 160%, v.$primary-font);
+        @include u.media('tablet-wide') {
+            @include u.text(u.rem(20), 400, v.$color-white-gray, 160%, v.$primary-font);
+        }
+    }
+    &--revolution {
+        @include u.text(u.rem(16), 400, v.$color-white-gray, 160%, v.$primary-font);
+        @include u.media('tablet-wide') {
+            @include u.text(u.rem(20), 400, v.$color-white-gray, 160%, v.$primary-font);
+        }
+    }
+    &--pro {
+        @include u.text(u.rem(16), 400, v.$color-white-gray, 160%, v.$primary-font);
+        @include u.media('tablet-wide') {
+            @include u.text(u.rem(20), 400, v.$color-white-gray, 160%, v.$primary-font);
+        }
+    }
+    &--tools {
+        @include u.text(u.rem(16), 500, v.$color-blue-subtitle, 140%, v.$primary-font);
+    }
+    &--tools2 {
+        @include u.text(u.rem(16), 400, v.$color-white-gray, 160%, v.$primary-font);
+        @include u.media('tablet-wide') {
+            @include u.text(u.rem(18), 400, v.$color-white-gray, 160%, v.$primary-font);
+        }
+    }
+    &--news {
+        @include u.text(u.rem(16), 500, v.$color-blue-subtitle, 140%, v.$primary-font);
+    }
+    &--buy {
+        @include u.text(u.rem(16), 400, v.$color-white-gray, 140%, v.$primary-font);
+        @include u.media('tablet-wide') {
+            @include u.text(u.rem(20), 400, v.$color-white-gray, 160%, v.$primary-font);
+        }
+    }
+}
