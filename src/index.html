@@ -85,7 +85,12 @@
         <h3 class="easy__subtitle subtitle subtitle--easy">
         We value our customers very much, so we made the application as easy to understand and easy to use as possible. In a short time, you can become a professional level specialist
         </h3>
-        <button class="easy__button button button--easy"><span>Go to swap now</span><img src="/src/assets/svg/ArrowRight.svg" alt="icon"></button>
+        <button class="easy__button button button--easy">
+          <span>Go to swap now</span>
+          <svg class="icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.289 6.25605C10.5158 5.99586 10.9107 5.96882 11.1708 6.19565L14.9944 9.52898C15.1305 9.64768 15.2087 9.81947 15.2087 10.0001C15.2087 10.1807 15.1305 10.3525 14.9944 10.4712L11.1708 13.8045C10.9107 14.0314 10.5158 14.0043 10.289 13.7441C10.0622 13.4839 10.0892 13.0891 10.3494 12.8623L12.9156 10.6251H5.41699C5.07181 10.6251 4.79199 10.3453 4.79199 10.0001C4.79199 9.65491 5.07181 9.37509 5.41699 9.37509H12.9156L10.3494 7.13787C10.0892 6.91104 10.0622 6.51623 10.289 6.25605Z"/>
+          </svg>
+        </button>
       </div>
       <div class="easy__image">
         <img class="easy__img" src="/src/assets/images/easy.png" alt="image">
@@ -100,7 +105,12 @@
         <h3 class="revolution__subtitle subtitle subtitle--revolution">
         Most of the existing DeFi are built on the Ethereum blockchain and the number of new applications in the field of decentralized finance is steadily growing. So, in early February, the number of Ethereum blocked on smart contracts for DeFi applications reached $ 938.
         </h3>
-        <button class="revolution__button button button--revolution"><span>Let`s try now</span><img src="/src/assets/svg/ArrowRight.svg" alt="icon"></button>
+        <button class="revolution__button button button--revolution">
+          <span>Let`s try now</span>
+          <svg class="icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.289 6.25605C10.5158 5.99586 10.9107 5.96882 11.1708 6.19565L14.9944 9.52898C15.1305 9.64768 15.2087 9.81947 15.2087 10.0001C15.2087 10.1807 15.1305 10.3525 14.9944 10.4712L11.1708 13.8045C10.9107 14.0314 10.5158 14.0043 10.289 13.7441C10.0622 13.4839 10.0892 13.0891 10.3494 12.8623L12.9156 10.6251H5.41699C5.07181 10.6251 4.79199 10.3453 4.79199 10.0001C4.79199 9.65491 5.07181 9.37509 5.41699 9.37509H12.9156L10.3494 7.13787C10.0892 6.91104 10.0622 6.51623 10.289 6.25605Z"/>
+          </svg>
+        </button>
       </div>
     </section>
     <section class="pro container">
@@ -109,7 +119,11 @@
           <h3 class="pro__subtitle subtitle subtitle--pro">
           Cryptorio has the ability to launch new pools as it is an automated market maker that can utilize smart routing and can give its clients the best swapping rates, slippage and price impact that is avialable.
           </h3>
-          <button class="pro__button button button--pro"><span>Go to swap now</span><img src="/src/assets/svg/ArrowRight.svg" alt="icon"></button>
+          <button class="pro__button button button--pro">
+            <span>Go to swap now</span>
+            <svg class="icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.289 6.25605C10.5158 5.99586 10.9107 5.96882 11.1708 6.19565L14.9944 9.52898C15.1305 9.64768 15.2087 9.81947 15.2087 10.0001C15.2087 10.1807 15.1305 10.3525 14.9944 10.4712L11.1708 13.8045C10.9107 14.0314 10.5158 14.0043 10.289 13.7441C10.0622 13.4839 10.0892 13.0891 10.3494 12.8623L12.9156 10.6251H5.41699C5.07181 10.6251 4.79199 10.3453 4.79199 10.0001C4.79199 9.65491 5.07181 9.37509 5.41699 9.37509H12.9156L10.3494 7.13787C10.0892 6.91104 10.0622 6.51623 10.289 6.25605Z"/>
+            </svg>
         </div>
         <div class="pro__image">
           <img class="pro__img" src="/src/assets/images/pro.png" alt="image">
@@ -126,14 +140,18 @@
         <div class="tabs__btns">
           <button id="btn-1" class="tabs__btn tabs__btn--active">
             <span>Key features</span>
+            <span id="line-1" class="tabs__line tabs__line--active"></span>
           </button>
           <button id="btn-2" class="tabs__btn">
             <span>Asset classes</span>
+            <span id="line-2" class="tabs__line"></span>
           </button>
           <button id="btn-3" class="tabs__btn">
             <span>Interface</span>
+            <span id="line-3" class="tabs__line"></span>
           </button>
         </div>
+        <span class="tools__line"></span>
         <div class="tabs__items">
           <div id="item-1" class="tabs__item tabs__item--active">
             <img class="tabs__img" src="/src/assets/images/tools1.png" alt="image">
@@ -152,7 +170,7 @@
         <h2 class="reviews__title title title--reviews">We are only as good, as our clients say we are</h2>
       </div>
       <div class="reviews__cards">
-        <div class="reviews__card card-review">
+        <div class="reviews__card card-review reviews__card--first">
           <div class="card-review__avatar">
             <img src="/src/assets/svg/avatar1.svg" alt="avatar">
           </div>
@@ -208,7 +226,7 @@
             </div>
           </div>
         </div>
-        <div class="reviews__card card-review">
+        <div class="reviews__card card-review reviews__card--last">
           <div class="card-review__avatar">
             <img src="/src/assets/svg/avatar5.svg" alt="avatar">
           </div>

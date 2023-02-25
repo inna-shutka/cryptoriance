@@ -2,6 +2,7 @@
 @use '../config/variables' as v;
 
 .tools {
+    position: relative;
     padding: 0px 0px 160px 0px;
     @include u.flex(flex-start, flex-start, column);
     @include u.media('tablet-wide') {
@@ -37,6 +38,17 @@
         @include u.media('tablet-wide') {
             width: 604px;
             margin-bottom: 70px;
+        }
+    }
+    &__line {
+        display: none;
+        @include u.media('tablet-wide') {
+            position: absolute;
+            top: 309px;
+            @include u.flex(center, center);
+            width: 816px;
+            height: 1px;
+            background-color: v.$color-deep-gray;
         }
     }
 }
@@ -77,38 +89,25 @@
             @include u.text(u.rem(20), 500, v.$color-white, 24px, v.$primary-font);
             text-align: center;
         }
-        &::before {
-            content:'';
-            position: absolute;
-            left: 0;
-            bottom: -8px;
-            width: 75px;
-            height: 2px;
-            background: v.$gradient-tools;
-            border-radius: 2px;
-            display: none;
-            @include u.media('tablet-wide') {
-            left: 0;
-            bottom: 0;
-            width: 154px;
-            height: 2px;
-            }
+    }
+    &__line {
+        position: absolute;
+        left: 0px;
+        bottom: -8px;
+        width: 96px;
+        height: 2px;
+        background: v.$gradient-tools;
+        border-radius: 2px;
+        display: none;
+        @include u.media('tablet-wide') {
+        left: 0;
+        bottom: 0;
+        width: 154px;
+        height: 2px;
         }
-        &:hover {
-            color: v.$color-blue;
-        }
-        &:active {
-            color: v.$color-blue;
-            &::before {
-                display: block;
-            }
-        }
-        &:focus {
-            color: v.$color-blue;
-            &::before {
-                display: block;
-            }
-        }
+    }
+    &__line--active {
+        display: block;
     }
     &__items {
         position: relative;

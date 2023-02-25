@@ -5,10 +5,11 @@
     width: 106px;
     height: 32px;
     background: v.$color-bg;
-    border: 1px solid #FFFFFF;
+    border: 1px solid v.$color-white;
     border-radius: 7px;
     padding: 6px 14px;
     @include u.text(u.rem(14), 400, v.$color-white, 17px, v.$primary-font);
+    @include u.flex(center, center);
     text-align: center;
     cursor: pointer;
     &:hover {
@@ -18,34 +19,31 @@
     &:focus {
         color: v.$color-white;
         border: 1px solid v.$color-blue;
-        background: v.$color-blue;
     }
     &--login {
         width: 48px;
         height: 21px;
-        border: none;
+        border: 1px solid v.$color-bg;
         padding: 0px;
         cursor: pointer;
         &:hover {
             color: v.$color-blue;
-            border: none;
+            border: 1px solid v.$color-bg;
         }
         &:focus {
             color: v.$color-white;
-            border: none;
-            background: none;
-            font-size: u.rem(16);
+            border: 1px solid v.$color-blue;
         }
     }
     &--hero {
         width: 194px;
         height: 48px;
-        border: 1px solid v.$color-blue;
         background-color: v.$color-blue;
+        border: 1px solid v.$color-blue;
         border-radius: 7px;
         @include u.flex(center, center);
         gap: 10px;
-        padding: 0px;
+        padding: 12px 18px;
         @include u.text(u.rem(16), 400, v.$color-white, 19px, v.$primary-font);
         text-align: center;
         cursor: pointer;
@@ -55,8 +53,8 @@
         }
         &:hover {
             color: v.$color-white;
-            background-color: v.$color-bg;
-            border: 1px solid v.$color-white;
+            background-color: v.$color-blue-2;
+            border: 1px solid v.$color-blue-2;
         }
         &:focus {
             color: v.$color-white;
@@ -65,31 +63,38 @@
         }
     }
     &--easy {
-        width: 170px;
-        height: 28px;
+        width: 154px;
+        height: 24px;
         border: 1px solid v.$color-bg;
         background-color: inherit;
         border-radius: 7px;
         @include u.flex(center, center);
         gap: 6px;
         padding: 2px 4px;
-        @include u.text(u.rem(16), 400, v.$color-white, 20px, v.$primary-font);
+        @include u.text(u.rem(16), 400, v.$color-white, 19px, v.$primary-font);
         text-align: center;
         cursor: pointer;
         &:hover {
-            color: v.$color-white;
-            background-color: v.$color-bg;
-            border: 1px solid v.$color-white;
+            color: v.$color-blue;
+            border: 1px solid v.$color-bg;
         }
         &:focus {
             color: v.$color-white;
-            background-color: v.$color-blue;
-            border: 1px solid v.$color-white;
+            border: 1px solid v.$color-blue;
         }
+    }
+    &--easy .icon {
+        fill: v.$color-white;
+    }
+    &--easy:hover .icon {
+        fill: v.$color-blue;
+    }
+    &--easy:focus .icon {
+        fill: v.$color-white;
     }
     &--revolution {
-        width: 148px;
-        height: 28px;
+        width: 154px;
+        height: 24px;
         border: 1px solid v.$color-bg;
         background-color: inherit;
         border-radius: 7px;
@@ -100,38 +105,52 @@
         text-align: center;
         cursor: pointer;
         &:hover {
-            color: v.$color-white;
-            background-color: v.$color-bg;
-            border: 1px solid v.$color-white;
+            color: v.$color-blue;
+            border: 1px solid v.$color-bg;
         }
         &:focus {
             color: v.$color-white;
-            background-color: v.$color-blue;
-            border: 1px solid v.$color-white;
+            border: 1px solid v.$color-blue;
         }
     }
+    &--revolution .icon {
+        fill: v.$color-white;
+    }
+    &--revolution:hover .icon {
+        fill: v.$color-blue;
+    }
+    &--revolution:focus .icon {
+        fill: v.$color-white;
+    }
     &--pro {
-        width: 170px;
-        height: 28px;
+        width: 154px;
+        height: 24px;
         border: 1px solid v.$color-bg;
         background-color: inherit;
         border-radius: 7px;
         @include u.flex(center, center);
         gap: 6px;
         padding: 2px 4px;
-        @include u.text(u.rem(16), 400, v.$color-white, 20px, v.$primary-font);
+        @include u.text(u.rem(16), 400, v.$color-white, 19px, v.$primary-font);
         text-align: center;
         cursor: pointer;
         &:hover {
-            color: v.$color-white;
-            background-color: v.$color-bg;
-            border: 1px solid v.$color-white;
+            color: v.$color-blue;
+            border: 1px solid v.$color-bg;
         }
         &:focus {
             color: v.$color-white;
-            background-color: v.$color-blue;
-            border: 1px solid v.$color-white;
+            border: 1px solid v.$color-blue;
         }
+    }
+    &--pro .icon {
+        fill: v.$color-white;
+    }
+    &--pro:hover .icon {
+        fill: v.$color-blue;
+    }
+    &--pro:focus .icon {
+        fill: v.$color-white;
     }
     &--buy {
         width: 194px;
@@ -141,7 +160,7 @@
         border-radius: 7px;
         @include u.flex(center, center);
         gap: 10px;
-        padding: 0px;
+        padding: 12px 18px;
         @include u.text(u.rem(16), 400, v.$color-white, 19px, v.$primary-font);
         text-align: center;
         cursor: pointer;
@@ -151,8 +170,8 @@
         }
         &:hover {
             color: v.$color-white;
-            background-color: v.$color-bg;
-            border: 1px solid v.$color-white;
+            background-color: v.$color-blue-2;
+            border: 1px solid v.$color-blue-2;
         }
         &:focus {
             color: v.$color-white;

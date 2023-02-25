@@ -3,16 +3,11 @@
 
 .card-features {
     position: relative;
-    min-width: 287px;
-    min-height: 289px;
     background: v.$color-medium-black;
     border: 2px v.$color-medium-black;
     border-radius: 10px;
-    @include u.flex(flex-start, center, column);
     padding: 24px 10px;
     @include u.media('tablet-wide') {
-        min-width: 440px;
-        min-height: 440px;
         padding: 78px 24px;
     }
     &::after {
