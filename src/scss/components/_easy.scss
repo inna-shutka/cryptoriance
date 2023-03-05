@@ -2,10 +2,10 @@
 @use '../config/variables' as v;
 
 .easy {
-    padding: 0px 16px 166px 16px;
+    padding: 160px 16px 166px 16px;
     @include u.flex(flex-start, flex-start, column);
     @include u.media('tablet-wide') {
-        padding: 0px 64px 188px 64px;
+        padding: 174px 64px 188px 64px;
         @include u.flex(space-between, flex-start);
     }
     &__info {
