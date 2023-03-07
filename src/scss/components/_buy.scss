@@ -1,0 +1,38 @@
+@use '../components/utils' as u;
+@use '../config/variables' as v;
+
+.buy {
+    background-image: url(/src/assets/images/buy_img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 16px 168px 16px;
+    @include u.flex(center, flex-start, column);
+    @include u.media('tablet-wide') {
+        padding: 183px 64px 184px 64px;
+        @include u.flex(center, center, column);
+    }
+    &__block {
+        @include u.flex(center, flex-start, column);
+        @include u.media('tablet-wide') {
+        @include u.flex(center, center, column);
+        text-align: center;
+        }
+    }
+    &__title {
+        width: 343px;
+        margin-bottom: 24px;
+        @include u.media('tablet-wide') {
+        width: 531px;
+        margin-bottom: 32px;
+        }
+    }
+    &__subtitle {
+        width: 343px;
+        margin-bottom: 48px;
+        @include u.media('tablet-wide') {
+        width: 816px;
+        margin-bottom: 50px;
+        }
+    }
+}

@@ -3,6 +3,25 @@
 @use './config/common';
 
 
+@use './components/logo';
+@use './components/button';
 @use './components/title';
-@use './components/cover';
-@use './components/index-page';
+@use './components/subtitle';
+@use './components/card-features';
+@use './components/card-review';
+@use './components/card-news';
+
+@use './components/header';
+@use './components/hero';
+@use './components/features';
+@use './components/easy';
+@use './components/revolution';
+@use './components/pro';
+@use './components/tools';
+@use './components/reviews';
+@use './components/news';
+@use './components/buy';
+@use './components/footer';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');

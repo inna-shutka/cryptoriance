@@ -1,0 +1,60 @@
+@use '../components/utils' as u;
+@use '../config/variables' as v;
+
+.revolution {
+    padding: 0px 16px 160px 16px;
+    @include u.flex(flex-start, flex-start, column-reverse);
+    @include u.media('tablet-wide') {
+        padding: 0px 64px 180px 64px;
+        @include u.flex(space-between, center);
+    }
+    &__image {
+        width: 300px;
+        height: 250px;
+        @include u.media('tablet-wide') {
+            width: 500px;
+            height: 400px;
+        }
+        @include u.media('desktop') {
+            width: 604px;
+            height: 505px;
+        }
+    }
+    &__img {
+        width: 300px;
+        height: 250px;
+        @include u.media('tablet-wide') {
+            width: 500px;
+            height: 400px;
+        }
+        @include u.media('desktop') {
+            width: 604px;
+            height: 505px;
+        }
+    }
+    &__info {
+        @include u.flex(flex-start, flex-start, column);
+    }
+    &__title {
+        width: 343px;
+        margin-bottom: 24px;
+        @include u.media('tablet-wide') {
+            width: 440px;
+            margin-bottom: 32px;
+        }
+    }
+    &__subtitle {
+        width: 343px;
+        margin-bottom: 24px;
+        @include u.media('tablet-wide') {
+            width: 392px;
+            margin-bottom: 40px;
+        }
+    }
+    &__button {
+        margin-bottom: 56px;
+        @include u.media('tablet-wide') {
+            margin-bottom: 0px;
+        }
+    }
+}

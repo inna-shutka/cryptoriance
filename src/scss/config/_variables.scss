@@ -1,11 +1,25 @@
-// COLORS
-$color-white: #fff;
+$color-white: #ffffff;
 $color-black: #000000;
-$color-bg: #1c1b22;
+$color-blue: #0077E2;
+$color-blue-2: #0063CE;
+$color-blue-subtitle: #268EEC;
+$color-blue-link: #248DED;
+$color-bg: #191B25;
+$color-gray: #AEB4C8;
+$color-white-gray: #E0E2E9;
+$color-dark-gray: #646978;
+$color-deep-gray: #3E404A;
+$color-medium-black: #20222C;
+$color-button-black: #272933;
 
-// FONTS
-$primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-$base-font-size: 10px;
+$gradient-title: linear-gradient(90deg, #FFFFFF -0.06%, #268EEC 100.58%);
+$gradient-padding: linear-gradient(173deg, #ffffff1a 0.07%, #20222c 99.8%);
+$gradient-border: linear-gradient(179deg, #87888f00 0%, #49494e 100%);
+$gradient-tools: linear-gradient(91.27deg, #618DFF 0%, #05D7E4 100%);
+$gradient-card-review: linear-gradient(179deg, #272933, #272933);
+$gradient-card-review-border: linear-gradient(179deg, #618DFF4D, #05D7E44D);
+$gradient-card-review-padding: linear-gradient(173deg, #272933, #272933);
+$gradient-card-review-border-hover: linear-gradient(179deg, #618DFF, #05D7E4);
+$gradient-card-news-border: linear-gradient(179deg, #0CC3CF4D, #5484FF4D);
 
-// OFFSET
-$mobile-container-padding-x: 16px;
+$primary-font: 'Rubik', sans-serif;

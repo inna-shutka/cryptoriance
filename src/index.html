@@ -6,5 +6,334 @@
     <link rel="stylesheet" href="./scss/style.scss" />
   </head>
   <body>
+    <header class="header container">
+      <a class="header__logo logo" href="">
+        <img class="header__img logo__img" src="/src/assets/svg/Logo.svg" alt="cryptoriance">
+      </a>
+      <div class="header__buttons">
+        <button class="header__button button button--login">Log in</button>
+        <button class="header__button button button--start">Get started</button>
+      </div>
+      <div class="header__menu menu">
+        <label class="menu__btn">
+            <input class="menu__checkbox" type="checkbox">
+            <span class="menu__burger">
+                <span class="menu__burger-item"></span>
+            </span>
+            <span class="menu__box">
+                <span class="menu__card">
+                    <span class="menu__item"><a class="menu__link" href="#">Features</a></span>
+                    <span class="menu__item"><a class="menu__link" href="#">Testimonials</a></span>
+                    <span class="menu__item"><a class="menu__link" href="#">News</a></span>
+                    <span class="menu__item"><a class="menu__link" href="#">Privacy Policy</a></span>
+                    <span class="menu__item"><a class="menu__link" href="#">Terms of Use</a></span>
+                </span>
+            </span>
+        </label>
+    </div>
+    </header>
+    <section class="hero container">
+      <div class="hero__info">
+        <h1 class="hero__title title title--hero">Be the part of revolution</h1>
+        <h2 class="hero__subtitle subtitle subtitle--hero">
+          Join the world's most comprehensive and secure trading platform. Buy and sell Bitcoin, Ethereum, XRP and many other cryptocurrencies with fiat or crypto.
+        </h2>
+        <button class="hero__button button button--hero"><span class="button--span">Get started now</span><img src="/src/assets/svg/ArrowRight.svg" alt="icon"></button>
+      </div>
+      <div class="hero__background">
+        <img class="hero__main-img" src="/src/assets/svg/hero-bg.svg" alt="image">
+        <img class="hero__line-img" src="/src/assets/svg/hero-vector.svg" alt="image">
+        <img class="hero__coin-blue" src="/src/assets/svg/coin-blue.svg" alt="image">
+        <img class="hero__coin-green" src="/src/assets/svg/coin-green.svg" alt="image">
+      </div>
+    </section>
+    <section class="features">
+      <div class="features__header container">
+        <h3 class="features__subtitle subtitle subtitle--features">FEATURES</h3>
+        <h2 class="features__title title title--features">Every revolution needs a leader</h2>
+      </div>
+      <div class="features__cards container container--scroll">
+        <div class="features__card card-features">
+          <div class="card-features__icon">
+            <img class="card-features__icon-img" src="/src/assets/svg/features-icon-1.svg" alt="icon">
+          </div>
+          <div class="card-features__title">Security first</div>
+          <div class="card-features__subtitle">When choosing an exchange, trust matters. That's why security has been and will always be our top consideration.
+          </div>
+        </div>
+        <div class="features__card card-features">
+          <div class="card-features__icon">
+            <img class="card-features__icon-img" src="/src/assets/svg/features-icon-2.svg" alt="icon">
+          </div>
+          <div class="card-features__title">Ease</div>
+          <div class="card-features__subtitle">The app is as easy to use as possible, so it has never been easier to perform transactions.
+          </div>
+        </div>
+        <div class="features__card card-features">
+          <div class="card-features__icon">
+            <img class="card-features__icon-img" src="/src/assets/svg/features-icon-3.svg" alt="icon">
+          </div>
+          <div class="card-features__title">Fast, robust technology</div>
+          <div class="card-features__subtitle">Our trading engine was custom-built for scale and speed to facilitate real-time order execution under heavy demand.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="easy container">
+      <div class="easy__info">
+        <h2 class="easy__title title title--easy">Cryptorio is easy and straightforward</h2>
+        <h3 class="easy__subtitle subtitle subtitle--easy">
+        We value our customers very much, so we made the application as easy to understand and easy to use as possible. In a short time, you can become a professional level specialist
+        </h3>
+        <button class="easy__button button button--easy">
+          <span>Go to swap now</span>
+          <svg class="icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.289 6.25605C10.5158 5.99586 10.9107 5.96882 11.1708 6.19565L14.9944 9.52898C15.1305 9.64768 15.2087 9.81947 15.2087 10.0001C15.2087 10.1807 15.1305 10.3525 14.9944 10.4712L11.1708 13.8045C10.9107 14.0314 10.5158 14.0043 10.289 13.7441C10.0622 13.4839 10.0892 13.0891 10.3494 12.8623L12.9156 10.6251H5.41699C5.07181 10.6251 4.79199 10.3453 4.79199 10.0001C4.79199 9.65491 5.07181 9.37509 5.41699 9.37509H12.9156L10.3494 7.13787C10.0892 6.91104 10.0622 6.51623 10.289 6.25605Z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="easy__image">
+        <img class="easy__img" src="/src/assets/images/easy.png" alt="image">
+      </div>
+    </section>
+    <section class="revolution container">
+        <div class="revolution__image">
+            <img class="revolution__img" src="/src/assets/images/revolution.png" alt="image">
+        </div>
+      <div class="revolution__info">
+        <h2 class="revolution__title title title--revolution">Now a new revolution is starting called DeFi</h2>
+        <h3 class="revolution__subtitle subtitle subtitle--revolution">
+        Most of the existing DeFi are built on the Ethereum blockchain and the number of new applications in the field of decentralized finance is steadily growing. So, in early February, the number of Ethereum blocked on smart contracts for DeFi applications reached $ 938.
+        </h3>
+        <button class="revolution__button button button--revolution">
+          <span>Let`s try now</span>
+          <svg class="icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.289 6.25605C10.5158 5.99586 10.9107 5.96882 11.1708 6.19565L14.9944 9.52898C15.1305 9.64768 15.2087 9.81947 15.2087 10.0001C15.2087 10.1807 15.1305 10.3525 14.9944 10.4712L11.1708 13.8045C10.9107 14.0314 10.5158 14.0043 10.289 13.7441C10.0622 13.4839 10.0892 13.0891 10.3494 12.8623L12.9156 10.6251H5.41699C5.07181 10.6251 4.79199 10.3453 4.79199 10.0001C4.79199 9.65491 5.07181 9.37509 5.41699 9.37509H12.9156L10.3494 7.13787C10.0892 6.91104 10.0622 6.51623 10.289 6.25605Z"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section class="pro container">
+      <div class="pro__info">
+          <h2 class="pro__title title title--pro">Try to swap easily and quickly crypto like a PRO</h2>
+          <h3 class="pro__subtitle subtitle subtitle--pro">
+          Cryptorio has the ability to launch new pools as it is an automated market maker that can utilize smart routing and can give its clients the best swapping rates, slippage and price impact that is avialable.
+          </h3>
+          <button class="pro__button button button--pro">
+            <span>Go to swap now</span>
+            <svg class="icon" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.289 6.25605C10.5158 5.99586 10.9107 5.96882 11.1708 6.19565L14.9944 9.52898C15.1305 9.64768 15.2087 9.81947 15.2087 10.0001C15.2087 10.1807 15.1305 10.3525 14.9944 10.4712L11.1708 13.8045C10.9107 14.0314 10.5158 14.0043 10.289 13.7441C10.0622 13.4839 10.0892 13.0891 10.3494 12.8623L12.9156 10.6251H5.41699C5.07181 10.6251 4.79199 10.3453 4.79199 10.0001C4.79199 9.65491 5.07181 9.37509 5.41699 9.37509H12.9156L10.3494 7.13787C10.0892 6.91104 10.0622 6.51623 10.289 6.25605Z"/>
+            </svg>
+        </div>
+        <div class="pro__image">
+          <img class="pro__img" src="/src/assets/images/pro.png" alt="image">
+        </div>
+    </section>
+    <section class="tools container">
+      <div class="tools__info">
+        <h3 class="tools__subtitle subtitle subtitle--tools">POWERFUL TOOLS</h3>
+        <h2 class="tools__title title title--tools">Trade with confidence</h2>
+        <h3 class="tools__subtitle-two subtitle subtitle--tools2">Trade our spot and margin markets with advanced funding options, lightning fast execution and deep  liquidity.
+        </h3>
+      </div>
+      <div class="tools__tabs tabs">
+        <div class="tabs__btns">
+          <button id="btn-1" class="tabs__btn tabs__btn--active">
+            <span>Key features</span>
+            <span id="line-1" class="tabs__line tabs__line--active"></span>
+          </button>
+          <button id="btn-2" class="tabs__btn">
+            <span>Asset classes</span>
+            <span id="line-2" class="tabs__line"></span>
+          </button>
+          <button id="btn-3" class="tabs__btn">
+            <span>Interface</span>
+            <span id="line-3" class="tabs__line"></span>
+          </button>
+        </div>
+        <span class="tools__line"></span>
+        <div class="tabs__items">
+          <div id="item-1" class="tabs__item tabs__item--active">
+            <img class="tabs__img" src="/src/assets/images/tools1.png" alt="image">
+          </div>
+          <div id="item-2" class="tabs__item">
+            <img class="tabs__img" src="/src/assets/images/tools2.png" alt="image">
+          </div>
+          <div id="item-3" class="tabs__item">
+            <img class="tabs__img" src="/src/assets/images/tools3.png" alt="image">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__text container">
+        <h2 class="reviews__title title title--reviews">We are only as good, as our clients say we are</h2>
+      </div>
+      <div class="reviews__cards container container--scroll">
+        <div class="reviews__card card-review reviews__card--first">
+          <div class="card-review__avatar">
+            <img src="/src/assets/svg/avatar1.svg" alt="avatar">
+          </div>
+          <div class="card-review__description">
+            <div class="card-review__title">
+              <h3 class="card-review__name">Kautilya Reddy</h3>
+              <a class="card-review__link" href="#">@reddyzzz</a>
+            </div>
+            <div class="card-review__text">
+              <p>Loved the onboarding experience!... As soon as I signed up...I got a call regarding my verification procedure, which was also swiftly taken care of. I then received a call to take me around the interface.</p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__card card-review">
+          <div class="card-review__avatar">
+            <img src="/src/assets/svg/avatar2.svg" alt="avatar">
+          </div>
+          <div class="card-review__description">
+            <div class="card-review__title">
+              <h3 class="card-review__name">Kautilya Reddy</h3>
+              <a class="card-review__link" href="#">@reddyzzz</a>
+            </div>
+            <div class="card-review__text">
+              <p>Loved the onboarding experience!... As soon as I signed up...I got a call regarding my verification procedure, which was also swiftly taken care of. I then received a call to take me around the interface.</p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__card card-review">
+          <div class="card-review__avatar">
+            <img src="/src/assets/svg/avatar3.svg" alt="avatar">
+          </div>
+          <div class="card-review__description">
+            <div class="card-review__title">
+              <h3 class="card-review__name">Pablo Colling</h3>
+              <a class="card-review__link" href="#">@reddyzzz</a>
+            </div>
+            <div class="card-review__text">
+              <p>I have just needed help from the support and Jose O. that assisted me, he was very helpful and polite and managed to fix my problem quite fast. Very happy with my results so far!</p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__card card-review">
+          <div class="card-review__avatar">
+            <img src="/src/assets/svg/avatar4.svg" alt="avatar">
+          </div>
+          <div class="card-review__description">
+            <div class="card-review__title">
+              <h3 class="card-review__name">Tom Smith</h3>
+              <a class="card-review__link" href="#">@reddyzzz</a>
+            </div>
+            <div class="card-review__text">
+              <p>I have just needed help from the support and Jose O. that assisted me, he was very helpful and polite and managed to fix my problem quite fast. Very happy with my results so far!</p>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__card card-review reviews__card--last">
+          <div class="card-review__avatar">
+            <img src="/src/assets/svg/avatar5.svg" alt="avatar">
+          </div>
+          <div class="card-review__description">
+            <div class="card-review__title">
+              <h3 class="card-review__name">Ann Wise</h3>
+              <a class="card-review__link" href="#">@reddyzzz</a>
+            </div>
+            <div class="card-review__text">
+              <p>I have just needed help from the support and Jose O. that assisted me, he was very helpful and polite and managed to fix my problem quite fast. Very happy with my results so far!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news__description container">
+        <h3 class="news__subtitle subtitle subtitle--news">POWERFUL TOOLS</h3>
+        <h2 class="news__title title title--news">Cryptoriance in the news</h2>
+      </div>
+      <div class="news__cards container--scroll">
+        <div class="news__card card-news">
+          <h3 class="card-news__title">Cryptorio Web App is Here!</h3>
+          <p class="card-news__text">
+            In this post, we'll summarize the developments across Cindicator's products in Q2 2021: Cryptorio, the Hybrid Intelligence platform, SuperForecasters, and Macro Sentiment Indicators. Now they can use Cryptorio as a new web app!
+          </p>
+          <p class="card-news__date">31 July 2021 · News</p>
+          <a href="#" class="card-news__button">Read more</a>
+        </div>
+        <div class="news__card card-news">
+          <h3 class="card-news__title">Investing Strategies in 2021</h3>
+          <p class="card-news__text">
+            Cryptocurrency investing can either be complicated or straightforward, depending on your strategy, goals, and risk appetite. You can go the easy way of buying and essentially forgetting about your crypto for years (also known as hodling).
+          </p>
+          <p class="card-news__date">31 July 2021 · News</p>
+          <a href="#" class="card-news__button">Read more</a>
+        </div>
+        <div class="news__card card-news">
+          <h3 class="card-news__title">Cindicator Digest:<br>Progress in Q2</h3>
+          <p class="card-news__text">
+            In this post, we'll summarize the developments across Cindicator's products in Q2 2021: Cryptorio, the Hybrid Intelligence platform, SuperForecasters, and Macro Sentiment Indicators.
+          </p>
+          <p class="card-news__date">31 July 2021 · News</p>
+          <a href="#" class="card-news__button">Read more</a>
+        </div>
+        <div class="news__card card-news">
+          <h3 class="card-news__title">Cryptorio Web App is Here!</h3>
+          <p class="card-news__text">
+            In this post, we'll summarize the developments across Cindicator's products in Q2 2021: Cryptorio, the Hybrid Intelligence platform, SuperForecasters, and Macro Sentiment Indicators. Now they can use Cryptorio as a new web app!
+          </p>
+          <p class="card-news__date">31 July 2021 · News</p>
+          <a href="#" class="card-news__button">Read more</a>
+        </div>
+        <div class="news__card card-news">
+          <h3 class="card-news__title">Investing Strategies in 2021</h3>
+          <p class="card-news__text">
+            Cryptocurrency investing can either be complicated or straightforward, depending on your strategy, goals, and risk appetite. You can go the easy way of buying and essentially forgetting about your crypto for years (also known as hodling).
+          </p>
+          <p class="card-news__date">31 July 2021 · News</p>
+          <a href="#" class="card-news__button">Read more</a>
+        </div>
+        <div class="news__card card-news">
+          <h3 class="card-news__title">Cindicator Digest:<br>Progress in Q2</h3>
+          <p class="card-news__text">
+            In this post, we'll summarize the developments across Cindicator's products in Q2 2021: Cryptorio, the Hybrid Intelligence platform, SuperForecasters, and Macro Sentiment Indicators.
+          </p>
+          <p class="card-news__date">31 July 2021 · News</p>
+          <a href="#" class="card-news__button">Read more</a>
+        </div>
+        <div class="news__card card-news">
+          <h3 class="card-news__title">Cryptorio Web App is Here!</h3>
+          <p class="card-news__text">
+            In this post, we'll summarize the developments across Cindicator's products in Q2 2021: Cryptorio, the Hybrid Intelligence platform, SuperForecasters, and Macro Sentiment Indicators. Now they can use Cryptorio as a new web app!
+          </p>
+          <p class="card-news__date">31 July 2021 · News</p>
+          <a href="#" class="card-news__button">Read more</a>
+        </div>
+        <div class="news__card card-news">
+          <h3 class="card-news__title">Investing Strategies in 2021</h3>
+          <p class="card-news__text">
+            Cryptocurrency investing can either be complicated or straightforward, depending on your strategy, goals, and risk appetite. You can go the easy way of buying and essentially forgetting about your crypto for years (also known as hodling).
+          </p>
+          <p class="card-news__date">31 July 2021 · News</p>
+          <a href="#" class="card-news__button">Read more</a>
+        </div>
+      </div>
+    </section>
+    <section class="buy">
+      <div class="buy__block">
+        <h2 class="buy__title title title--buy">A simple, secure way to buy and sell cryptocurrency</h2>
+        <h3 class="buy__subtitle subtitle subtitle--buy">Trade bitcoin and other cryptos in 3 minutes.</h3>
+        <button class="buy__button button button--buy"><span class="button--span">Get started now</span><img src="/src/assets/svg/ArrowRight.svg" alt="icon"></button>
+      </div>
+    </section>
+    <footer class="footer container">
+      <a class="footer__logo" href="#">
+        <img src="/src/assets/svg/Logo.svg" alt="cryptoriance">
+      </a>
+      <div class="footer__items">
+        <div class="footer__menu">
+          <a href="#" class="footer__link">Term of Use</a>
+          <a href="#" class="footer__link">Privacy Policy</a>
+        </div>
+        <p class="footer__rights">© 2021 All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

@@ -1,0 +1,150 @@
+@use '../components/utils' as u;
+@use '../config/variables' as v;
+
+.header {
+    width: 100%;
+    height: 80px;
+    padding: 30px 16px;
+    position: fixed;
+    z-index: 6;
+    background-color: v.$color-bg;
+    backdrop-filter: blur(7.5px);
+    @include u.flex(space-between, center);
+    @include u.media('tablet-wide') {
+        height: 72px;
+        padding: 26px 64px;
+    };
+    &__logo {
+        width: 100%;
+        width: 148px;
+        @include u.flex(flex-start, center);
+        z-index: 6;
+    }
+    &__buttons {
+        display: none;
+        @include u.media('tablet-wide') {
+            width: 100%;
+            @include u.flex(flex-end, center);
+            gap: 36px;
+        }
+    }
+}
+
+.menu {
+    @include u.flex(space-between, center);
+    position: absolute;
+    opacity: 1;
+    z-index: 10;
+    top: 33px;
+    right: 28px;
+    @include u.media('tablet-wide') {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+    &__btn {
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__card {
+        pointer-events: none;
+    }
+
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    &__checkbox:checked ~ .menu__box {
+        transform: translateX(0);
+        transition: transform 0.6s ease;
+    }
+
+    &__checkbox:checked ~ .menu__burger .menu__burger-item {
+        opacity: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    &__checkbox:checked ~ .menu__burger::after {
+        transform: rotateZ(-45deg) translate(2.5px);
+        width: 12px;
+        height: 2px;
+    }
+
+    &__checkbox:checked ~ .menu__burger::before {
+        transform: rotateZ(45deg) translate(2.5px);
+        width: 12px;
+        height: 2px;
+    }
+
+    &__burger {
+        position: relative;
+        width: 40px;
+        height: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__burger-item {
+        transition: opacity 0.5s ease;
+    }
+
+    &__burger-item,
+    &__burger::after,
+    &__burger::before {
+        display: block;
+        height: 2px;
+        width: 100%;
+        border-radius: 100px;
+        background-color: v.$color-white;
+    }
+
+    &__burger::after,
+    &__burger::before {
+        content: "";
+        transition: transform 0.5s ease;
+    }
+
+    &__burger::after {
+        transform-origin: left center;
+    }
+
+    &__burger::before {
+        transform-origin: left center;
+    }
+
+    &__box {
+        transform: translateX(100vw);
+        @include u.flex(center, center, column);
+        position: fixed;
+        z-index: 10;
+        top: 80px;
+        left: 0px;
+        transition: transform 0.5s ease;
+        pointer-events: none;
+    }
+
+    &__card {
+        background: v.$color-bg;
+        width: 100vw;
+        min-height: 100vh;
+        padding: 0px 32px;
+        @include u.flex(flex-start, flex-start, column);
+        gap: 32px;
+    }
+
+    &__item {
+        @include u.text(u.rem(24), 400, v.$color-white, 150%, v.$primary-font);
+    }
+
+    &__link {
+        text-decoration: none;
+        pointer-events: auto;
+        color: v.$color-white;
+    }
+}

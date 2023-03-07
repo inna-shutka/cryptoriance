@@ -1,9 +1,55 @@
-@use 'utils';
+@use '../components/utils' as u;
+@use '../config/variables' as v;
 
 .title {
-  text-align: center;
-  @include utils.text(utils.rem(32px), 700, utils.$color-white);
-  @include utils.media('tablet') {
-    font-size: utils.rem(42px);
-  }
+    @include u.text(u.rem(28), 500, inherit, 33px, v.$primary-font);
+    background: v.$gradient-title;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    @include u.media('tablet-wide') {
+        @include u.text(u.rem(40), 500, inherit, 47px, v.$primary-font);
+    }
+    &--features {
+        @include u.media('tablet-wide') {
+        @include u.text(u.rem(40), 500, inherit, 140%, v.$primary-font);
+        }
+    }
+    &--easy {
+        @include u.media('tablet-wide') {
+        @include u.text(u.rem(40), 500, inherit, 140%, v.$primary-font);
+        }
+    }
+    &--revolution {
+        @include u.media('tablet-wide') {
+        @include u.text(u.rem(40), 500, inherit, 140%, v.$primary-font);
+        }
+    }
+    &--pro {
+        @include u.media('tablet-wide') {
+        @include u.text(u.rem(40), 500, inherit, 140%, v.$primary-font);
+        }
+    }
+    &--tools {
+        @include u.text(u.rem(28), 700, inherit, 33px, v.$primary-font);
+        @include u.media('tablet-wide') {
+        @include u.text(u.rem(40), 500, inherit, 140%, v.$primary-font);
+        }
+    }
+    &--reviews {
+        @include u.media('tablet-wide') {
+        @include u.text(u.rem(36), 500, inherit, 140%, v.$primary-font);
+        }
+    }
+    &--news {
+        @include u.media('tablet-wide') {
+        @include u.text(u.rem(40), 500, inherit, 140%, v.$primary-font);
+        }
+    }
+    &--buy {
+        @include u.media('tablet-wide') {
+        @include u.text(u.rem(40), 500, inherit, 140%, v.$primary-font);
+        }
+    }
 }
