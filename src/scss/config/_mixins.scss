@@ -67,7 +67,8 @@ $breakpoints: (
     'tablet-medium': 768px,
     'tablet-wide': 1024px,
     'desktop': 1200px,
-    'desktop-wide': 1440px,
+    'desktop-wide': 1366px,
+    'tv': 1560px,
 );
 
 @mixin media($width, $type: min) {

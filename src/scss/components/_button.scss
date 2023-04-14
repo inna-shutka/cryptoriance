@@ -7,32 +7,35 @@
     background: v.$color-bg;
     border: 1px solid v.$color-white;
     border-radius: 7px;
-    padding: 6px 14px;
+    padding: 8px 14px;
     @include u.text(u.rem(14), 400, v.$color-white, 17px, v.$primary-font);
-    @include u.flex(center, center);
     text-align: center;
     cursor: pointer;
     &:hover {
         color: v.$color-blue;
         border: 1px solid v.$color-blue;
+        transition: all 0.3s ease;
     }
     &:focus {
         color: v.$color-white;
         border: 1px solid v.$color-blue;
+        transition: all 0.3s ease;
     }
     &--login {
-        width: 48px;
-        height: 21px;
+        width: 50px;
+        height: 22px;
         border: 1px solid v.$color-bg;
-        padding: 0px;
+        padding: 2px 4px;
         cursor: pointer;
         &:hover {
             color: v.$color-blue;
             border: 1px solid v.$color-bg;
+            transition: all 0.3s ease;
         }
         &:focus {
             color: v.$color-white;
             border: 1px solid v.$color-blue;
+            transition: all 0.3s ease;
         }
     }
     &--hero {
@@ -55,11 +58,13 @@
             color: v.$color-white;
             background-color: v.$color-blue-2;
             border: 1px solid v.$color-blue-2;
+            transition: all 0.3s ease;
         }
         &:focus {
             color: v.$color-white;
             background-color: v.$color-blue;
             border: 1px solid v.$color-white;
+            transition: all 0.3s ease;
         }
     }
     &--easy {
@@ -77,10 +82,12 @@
         &:hover {
             color: v.$color-blue;
             border: 1px solid v.$color-bg;
+            transition: all 0.3s ease;
         }
         &:focus {
             color: v.$color-white;
             border: 1px solid v.$color-blue;
+            transition: all 0.3s ease;
         }
     }
     &--easy .icon {
@@ -107,10 +114,12 @@
         &:hover {
             color: v.$color-blue;
             border: 1px solid v.$color-bg;
+            transition: all 0.3s ease;
         }
         &:focus {
             color: v.$color-white;
             border: 1px solid v.$color-blue;
+            transition: all 0.3s ease;
         }
     }
     &--revolution .icon {
@@ -137,10 +146,12 @@
         &:hover {
             color: v.$color-blue;
             border: 1px solid v.$color-bg;
+            transition: all 0.3s ease;
         }
         &:focus {
             color: v.$color-white;
             border: 1px solid v.$color-blue;
+            transition: all 0.3s ease;
         }
     }
     &--pro .icon {
@@ -168,18 +179,20 @@
             position: relative;
             z-index: 5;
         }
+        @include u.media('tablet-wide') {
+            height: 60px;
+        }
         &:hover {
             color: v.$color-white;
             background-color: v.$color-blue-2;
             border: 1px solid v.$color-blue-2;
+            transition: all 0.3s ease;
         }
         &:focus {
             color: v.$color-white;
             background-color: v.$color-blue;
             border: 1px solid v.$color-white;
-        }
-        @include u.media('tablet-wide') {
-            height: 60px;
+            transition: all 0.3s ease;
         }
     }
 }

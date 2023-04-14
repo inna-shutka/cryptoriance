@@ -2,197 +2,108 @@
 @use '../config/variables' as v;
 
 .hero {
-    position: relative;
-    padding-left: 16px;
-    padding-right: 16px;
-    @include u.flex(flex-start, flex-start, column);
-    @include u.media('tablet-wide') {
-        min-height: 100vh;
-        @include u.flex(space-between, flex-start);
-        padding-left: 64px;
-        padding-right: 0px;
-    }
-    &__info {
-        width: 343px;
-        padding-top: 122px;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    @include u.flex(center, flex-start);
+    &__wrapper {
+        position: relative;
+        padding: 122px 0px 0px 16px;
         @include u.flex(flex-start, flex-start, column);
         @include u.media('tablet-wide') {
-            width: 498px;
-            padding-top: 250px;
+            @include u.flex(space-between, flex-start);
+            padding: 126px 0px 0px 64px;
+        }
+    }
+    &__info {
+        @include u.flex(flex-start, flex-start, column);
+        @include u.media('tablet-wide') {
+            padding-top: 124px;
         }
     }
     &__title {
-        width: 328px;
+        width: 100%;
+        max-width: 498px;
         margin-bottom: 24px;
         @include u.media('tablet-wide') {
-            width: 498px;
             margin-bottom: 32px;
         }
     }
     &__subtitle {
-        width: 343px;
+        width: 100%;
+        max-width: 392px;
         margin-bottom: 48px;
         @include u.media('tablet-wide') {
-            width: 392px;
             margin-bottom: 50px;
         }
     }
     &__button {
         width: 194px;
+        height: 48px;
+        margin-bottom: 64px;
+        @include u.media('tablet-wide') {
+            margin-bottom: 0px;
+        }
     }
     &__background {
-        @include u.flex(flex-start, flex-start, column);
+        display: flex;
+        align-self: flex-end;
     }
-    &__main-img {
-        display: block;
-        position: absolute;
-        z-index: 5;
-        top: 450px;
-        right: 0px;
-        width: 100%;
+    &__main-image {
+        width: 300px;
+        height: 200px;
         @include u.media('phone-wide') {
             width: 370px;
-            height: 280px;
+            height: 250px;
         }
         @include u.media('tablet-small') {
             width: 450px;
-            height: 280px;
+            height: 320px;
         }
         @include u.media('tablet') {
             width: 550px;
-            height: 310px;
+            height: 380px;
         }
         @include u.media('tablet-medium') {
-            width: 700px;
-            height: 400px;
+            width: 680px;
+            height: 450px;
         }
         @include u.media('tablet-wide') {
-            top: 80px;
-            width: 500px;
-            height: 560px;
+            width: 600px;
+            height: 400px;
         }
         @include u.media('desktop') {
-            top: 126px;
-            width: 650px;
-            height: 580px;
+            width: 740px;
+            height: 540px;
         }
         @include u.media('desktop-wide') {
-            width: 800px;
-            height: 600px;
+            width: 820px;
+            height: 570px;
+            }
+    }
+    &__main-img {
+        width: inherit;
+        height: inherit;
+    }
+    &__line-image {
+        position: absolute;
+        min-width: 100%;
+        z-index: -1;
+        top: 80vh;
+        left: -10%;
+        @include u.media('phone-wide') {
+            top: 74vh;
+        }
+        @include u.media('tablet-medium') {
+            top: 76vh;
+            left: 0;
+        }
+        @include u.media('tablet-wide') {
+            top: 50vh;
         }
     }
     &__line-img {
-        display: block;
-        position: absolute;
-        z-index: 3;
-        top: 470px;
-        left: -500px;
-        @include u.media('phone-wide') {
-            top: 480px;
-            left: -470px;
-        }
-        @include u.media('tablet-small') {
-            top: 500px;
-            left: -450px;
-        }
-        @include u.media('tablet') {
-            top: 500px;
-            left: -400px;
-        }
-        @include u.media('tablet-medium') {
-            top: 570px;
-            left: -350px;
-        }
-        @include u.media('tablet-wide') {
-            top: 445px;
-            left: -10px;
-            width: 100%;
-        }
-        @include u.media('desktop') {
-            top: 445px;
-            left: -20px;
-        }
-        @include u.media('desktop-wide') {
-            top: 445px;
-            left: -20px;
-        }
-    }
-    &__coin-blue {
-        display: block;
-        position: absolute;
-        z-index: 5;
-        width: 70px;
-        height: 70px;
-        top: 700px;
-        left: 0px;
-        @include u.media('phone-wide') {
-            top: 720px;
-            left: 10px;
-        }
-        @include u.media('tablet-small') {
-            top: 730px;
-            left: 20px;
-        }
-        @include u.media('tablet') {
-            top: 750px;
-            left: 20px;
-        }
-        @include u.media('tablet-medium') {
-            top: 810px;
-            left: 30px;
-        }
-        @include u.media('tablet-wide') {
-            width: 106px;
-            height: 106px;
-            top: 600px;
-            left: 220px;
-        }
-        @include u.media('desktop') {
-            top: 640px;
-            left: 240px;
-        }
-        @include u.media('desktop-wide') {
-            top: 670px;
-            left: 270px;
-        }
-    }
-    &__coin-green {
-        display: block;
-        position: absolute;
-        z-index: 5;
-        width: 70px;
-        height: 70px;
-        top: 760px;
-        right: 0px;
-        @include u.media('phone-wide') {
-            top: 770px;
-            right: 0px;
-        }
-        @include u.media('tablet-small') {
-            top: 780px;
-            right: 0px;
-        }
-        @include u.media('tablet') {
-            top: 790px;
-            right: 0px;
-        }
-        @include u.media('tablet-medium') {
-            top: 870px;
-            right: 20px;
-        }
-        @include u.media('tablet-wide') {
-            width: 116px;
-            height: 116px;
-            top: 685px;
-            right: 50px;
-        }
-        @include u.media('desktop') {
-            top: 730px;
-            right: 70px;
-        }
-        @include u.media('desktop-wide') {
-            top: 790px;
-            right: 70px;
-        }
+        width: 100%;
+        height: inherit;
     }
 }
