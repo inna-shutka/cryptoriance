@@ -11,6 +11,7 @@
     &:hover {
         background: v.$gradient-card-review-padding padding-box,
         v.$gradient-card-review-border-hover border-box;
+        transition: all 0.3s ease;
     }
     &__description {
         @include u.flex(stretch, flex-start, column);

@@ -16,6 +16,7 @@
     &:hover {
         background: linear-gradient(173deg, v.$color-medium-black, v.$color-medium-black) padding-box,
         v.$gradient-card-review-border-hover border-box;
+        transition: all 0.3s ease;
     }
     &__title {
         @include u.text(u.rem(20), 500, v.$color-white, 140%, v.$primary-font);
@@ -53,10 +54,12 @@
         &:hover {
             background-color: v.$color-bg;
             border: 1px solid v.$color-white;
+            transition: all 0.3s ease;
         }
         &:focus {
             background-color: v.$color-blue;
             border: 1px solid v.$color-white;
+            transition: all 0.3s ease;
         }
         @include u.media('tablet-wide') {
             background-color: v.$color-bg;
@@ -64,10 +67,12 @@
             &:hover {
                 color: v.$color-blue;
                 border: 1px solid v.$color-blue;
+                transition: all 0.3s ease;
             }
             &:focus {
                 border: 1px solid v.$color-blue;
                 background-color: v.$color-button-black;
+                transition: all 0.3s ease;
             }
         }
     }
